@@ -5,7 +5,7 @@
 [![OCR](https://img.shields.io/badge/OCR-EasyOCR-green?style=for-the-badge)](https://github.com/JaidedAI/EasyOCR)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-<video src="https://github.com/Lanor-Jephthah1/echer/raw/main/assets/echer_demo.mp4" width="100%" controls autoplay loop muted></video>
+https://github.com/Lanor-Jephthah1/echer/raw/main/assets/echer_demo.mp4
 
 **Echer** is a native, premium, transparent OS overlay assistant that runs completely offline and locally on Windows. Built using PyQt6, it provides a seamless, context-aware bridge between your local LLM and what is currently happening on your screen.
 
