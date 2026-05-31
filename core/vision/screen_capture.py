@@ -37,12 +37,39 @@ class ScreenPerceptionEngine:
     def capture_active_window(self, target_window_info=None):
         window_info = target_window_info or self.get_active_window_info()
         if window_info and window_info["width"] > 0 and window_info["height"] > 0:
-            monitor = {
-                "top": window_info["top"],
-                "left": window_info["left"],
-                "width": window_info["width"],
-                "height": window_info["height"]
-            }
+            try:
+                # Get primary monitor bounds to clamp coordinates
+                primary = self.sct.monitors[1]
+                p_left = primary["left"]
+                p_top = primary["top"]
+                p_width = primary["width"]
+                p_height = primary["height"]
+                
+                # Clamp coordinates to prevent negative offsets from maximized windows (e.g. -8, -8)
+                left = max(p_left, window_info["left"])
+                top = max(p_top, window_info["top"])
+                
+                # Fit width and height within monitor bounds
+                right = min(p_left + p_width, window_info["left"] + window_info["width"])
+                bottom = min(p_top + p_height, window_info["top"] + window_info["height"])
+                
+                width = max(1, right - left)
+                height = max(1, bottom - top)
+                
+                monitor = {
+                    "left": left,
+                    "top": top,
+                    "width": width,
+                    "height": height
+                }
+            except Exception:
+                monitor = {
+                    "top": max(0, window_info["top"]),
+                    "left": max(0, window_info["left"]),
+                    "width": window_info["width"],
+                    "height": window_info["height"]
+                }
+                
             output_path = os.path.join(self.capture_dir, "active_window.png")
             try:
                 sct_img = self.sct.grab(monitor)
