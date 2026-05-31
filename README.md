@@ -1,5 +1,7 @@
 # 🌌 Echer OS Layer
 
+![Echer Banner](assets/echer_banner.png)
+
 [![Local AI](https://img.shields.io/badge/Local%20AI-Ollama-blueviolet?style=for-the-badge)](https://ollama.com)
 [![GUI](https://img.shields.io/badge/UI-PyQt6-blue?style=for-the-badge)](https://www.riverbankcomputing.com/software/pyqt/)
 [![OCR](https://img.shields.io/badge/OCR-EasyOCR-green?style=for-the-badge)](https://github.com/JaidedAI/EasyOCR)
@@ -75,6 +77,7 @@ echer/
 │   └── vision/
 │       ├── ocr_parser.py           # Pre-warmed singleton EasyOCR CPU engine
 │       └── screen_capture.py       # High-speed window and full screen captures
+├── assets/                         # Visual resources (banner, etc.)
 ├── captures/                       # Temporary folder for screenshots (auto-created)
 ├── .gitignore                      # Excludes virtual environments and captures
 ├── main.py                         # App entrypoint
