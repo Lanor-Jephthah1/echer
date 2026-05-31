@@ -5,7 +5,7 @@
 [![OCR](https://img.shields.io/badge/OCR-EasyOCR-green?style=for-the-badge)](https://github.com/JaidedAI/EasyOCR)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-![Echer Walkthrough Demo](assets/echer_demo.gif)
+<video src="assets/echer_demo.mp4" width="100%" controls autoplay loop muted></video>
 
 **Echer** is a native, premium, transparent OS overlay assistant that runs completely offline and locally on Windows. Built using PyQt6, it provides a seamless, context-aware bridge between your local LLM and what is currently happening on your screen.
 
@@ -77,7 +77,7 @@ echer/
 │   └── vision/
 │       ├── ocr_parser.py           # Pre-warmed singleton EasyOCR CPU engine
 │       └── screen_capture.py       # High-speed window and full screen captures
-├── assets/                         # Visual resources (banner, etc.)
+├── assets/                         # Visual resources (walkthrough video, etc.)
 ├── captures/                       # Temporary folder for screenshots (auto-created)
 ├── .gitignore                      # Excludes virtual environments and captures
 ├── main.py                         # App entrypoint
