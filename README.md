@@ -1,11 +1,11 @@
 # 🌌 Echer OS Layer
 
-![Echer Banner](assets/echer_banner.png)
-
 [![Local AI](https://img.shields.io/badge/Local%20AI-Ollama-blueviolet?style=for-the-badge)](https://ollama.com)
 [![GUI](https://img.shields.io/badge/UI-PyQt6-blue?style=for-the-badge)](https://www.riverbankcomputing.com/software/pyqt/)
 [![OCR](https://img.shields.io/badge/OCR-EasyOCR-green?style=for-the-badge)](https://github.com/JaidedAI/EasyOCR)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+![Echer Walkthrough Demo](assets/echer_demo.gif)
 
 **Echer** is a native, premium, transparent OS overlay assistant that runs completely offline and locally on Windows. Built using PyQt6, it provides a seamless, context-aware bridge between your local LLM and what is currently happening on your screen.
 
